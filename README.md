@@ -1,4 +1,4 @@
-# Estas son las ideas de mi Proyecto de un Bot de Discord
+## Estas son las ideas de mi Proyecto de un Bot de Discord
 -> El Bot de Discord va a ser como si fuera un videojuego y te recompense con XP o monedas por hacer habitos buenos que no contaminen y que puedas reclamar recomensas por las acciones que haces y las monedas que consigas, como salir de fiesta o pedir comida etc.
 
 -> Ayudaria a que las personas tengan una motivacion para realizar acciones
@@ -13,3 +13,27 @@
 
 -> Un planeta virtual que segun lo que haces en la vida real mejora o empeora, y las personas o habitats naturales de ese planeta virtual te 
 recompensaran con recompensas o materiales, esto ayudaria a que no solo intentes mejorar un planeta sino dos y tengas mayor motivacion en salvar ambos.
+
+
+
+
+## Referencias:
+## Las bibliotecas que voy a utilizar:
+
+- pip install -U discord.py #Para instalar la API discord
+  
+- pip install apscheduler
+
+## Referencias útiles:
+
+- https://discordpy.readthedocs.io/en/stable/ 
+  # Para entender la API de Discord
+
+- https://realpython.com/how-to-make-a-discord-bot-python
+  #Ayuda de la creacion de un bot
+
+- https://top.gg/bot/867127911685423161
+  #Bot que rastrea el clima
+
+- https://devpost.com/software/envbot
+  #Un bot que avisa que el problema esta en problemas y te da datos sobre causas y problemas
