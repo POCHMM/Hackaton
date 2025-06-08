@@ -1,2 +1,15 @@
-# Hackaton
-mi proyecto del hackaton del cambio climatico
+# Estas son las ideas de mi Proyecto de un Bot de Discord
+-> El Bot de Discord va a ser como si fuera un videojuego y te recompense con XP o monedas por hacer habitos buenos que no contaminen y que puedas reclamar recomensas por las acciones que haces y las monedas que consigas, como salir de fiesta o pedir comida etc.
+
+-> Ayudaria a que las personas tengan una motivacion para realizar acciones
+
+-> Motivas a las personas porque seria como un videojuego en el que consigues XP y subes de nivel consigues loot monedas etc
+
+-> Un sistema de logros para que las personas realizen acciones como no usar plastico que reduciria el nivel de plastico desperdiciado
+
+-> Sistema de roles que aumenta segun la experiencia y acciones que haces y te motivaria a competir con otras personas y superarlas cuidadando el medio ambiente
+
+-> Retos dificil que otorgan mucha XP o recompensas pero ayudarian mucho mas al medio ambiente pero son tardadas
+
+-> Un planeta virtual que segun lo que haces en la vida real mejora o empeora, y las personas o habitats naturales de ese planeta virtual te 
+recompensaran con recompensas o materiales, esto ayudaria a que no solo intentes mejorar un planeta sino dos y tengas mayor motivacion en salvar ambos.
