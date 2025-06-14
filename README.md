@@ -76,6 +76,3 @@ recompensaran con recompensas o materiales, esto ayudaria a que no solo intentes
   2.- Ejecutar comandos uno por uno anotando el rendimiento de cada y si es malo intentar optimizarlo: !!!!
 
   3.- En un servidor con varias personas que cada persona ejecute varias funciones para ver hasta que punto puede llegar el bot sin que     se caiga y si el rendimiento es muy malo intentar optimizarlo: !!
-
-
-1.-) Objetivos de Pruebas: Nos gustaria poder probar como funcionan los comandos y si se ejectuan correctamante sin que el bot los confundo uno de otros y sirvan correctamente, tambien la interfaz de texto y que se entienda lo que dice en pantalla y no se confunda con otras cosas y se vea bonito, limpio y ordenado todo el tiempo
