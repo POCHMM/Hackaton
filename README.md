@@ -40,14 +40,42 @@ recompensaran con recompensas o materiales, esto ayudaria a que no solo intentes
 
 
 ## Control de Pruebas:
-
+## Niveles de Importancia: Bajo = !  Medio = !!  Alto = !!! Priodriad y Importante = !!!!
 # Interfaz:
 - Probar las interfazes de texto y de interfaz y comprobar que se entienda todo lo que sale en pantalla.
 
 - Los resultados a esperar seria que la interfaz de texto del bot sea leeible todo el tiempo y este todo organizado, bonito y limpio       para que sea facil destinguir las categorias y el texto
-- 
-  # Pasos para comprobarlo
+  
+### Pasos para comprobarlo
+  1.- Ejecutar comandos uno por uno y revisar si es leeible y bonito, limpio y organizado de leer: !!!!
+
+  2.- Preguntar a alguien ajeno del proyecto si lo puede entender con facilidad: !
+
+  3.- Ejceutar varios comandos seguidos y revisar si sigue siendo igual de organizado y leeible: !!!
+# .
+
+# Funciones:
+- Probar las funciones del bot y comandos y que todos se ejecuten correctamente con todas sus funciones.
+
+- Los resultados a esperar seria que las funciones del bot esten completas y se ejcuten correctamente todas.
+  
+### Pasos para comprobarlo
+  1.- Anotar que funciones deberia ejecutar cada funcion al ser usada y ejecutar uno por uno comprobando si ejecuta y hace todas sus       funciones: !!!! 
+
+  2.- Ejecutar varios comandos y comprobar si la maquina no los confunde uno con otro: !
+# .
+
+# Rendimiento:
+- Probar el rendimiento del bot
+
+- Los resultados a esperar seria que el bot sirva sin errores de rendimiento y que baya fluido todo el tiempo.
+  
+### Pasos para comprobarlo
+  1.- Ejecutar varios comandos a la vez y ver si el rendimiento es afectado: !!!
+
+  2.- Ejecutar comandos uno por uno anotando el rendimiento de cada y si es malo intentar optimizarlo: !!!!
+
+  3.- En un servidor con varias personas que cada persona ejecute varias funciones para ver hasta que punto puede llegar el bot sin que     se caiga y si el rendimiento es muy malo intentar optimizarlo: !!
 
 
-
-1.-) Objetivos de Pruebas: Nos gustaria poder probar como funcionan los comandos y si se ejectuan correctamante sin que el bot los confundo uno de otros y sirvan correctamente, tambien la interfaz de texto y que se entienda lo que dice en pantalla y no se confunda con otras cosas y se vea bonito, limip y ordenado todo el tiempo
+1.-) Objetivos de Pruebas: Nos gustaria poder probar como funcionan los comandos y si se ejectuan correctamante sin que el bot los confundo uno de otros y sirvan correctamente, tambien la interfaz de texto y que se entienda lo que dice en pantalla y no se confunda con otras cosas y se vea bonito, limpio y ordenado todo el tiempo
