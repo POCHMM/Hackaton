@@ -37,3 +37,15 @@ recompensaran con recompensas o materiales, esto ayudaria a que no solo intentes
 
 - https://devpost.com/software/envbot
   #Un bot que avisa que el problema esta en problemas y te da datos sobre causas y problemas
+
+
+## Control de Pruebas:
+
+# Interfaz:
+- Probar las interfazes de texto y de interfaz y comprobar que se entienda todo lo que sale en pantalla.
+  -Los resultados a esperar seria que la interfaz de texto del bot sea leeible todo el tiempo y este todo organizado, bonito y limpio       para que sea facil destinguir las categorias y el texto
+  # Pasos para comprobarlo
+
+
+
+1.-) Objetivos de Pruebas: Nos gustaria poder probar como funcionan los comandos y si se ejectuan correctamante sin que el bot los confundo uno de otros y sirvan correctamente, tambien la interfaz de texto y que se entienda lo que dice en pantalla y no se confunda con otras cosas y se vea bonito, limip y ordenado todo el tiempo
