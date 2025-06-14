@@ -43,7 +43,9 @@ recompensaran con recompensas o materiales, esto ayudaria a que no solo intentes
 
 # Interfaz:
 - Probar las interfazes de texto y de interfaz y comprobar que se entienda todo lo que sale en pantalla.
-  -Los resultados a esperar seria que la interfaz de texto del bot sea leeible todo el tiempo y este todo organizado, bonito y limpio       para que sea facil destinguir las categorias y el texto
+
+- Los resultados a esperar seria que la interfaz de texto del bot sea leeible todo el tiempo y este todo organizado, bonito y limpio       para que sea facil destinguir las categorias y el texto
+- 
   # Pasos para comprobarlo
 
 
