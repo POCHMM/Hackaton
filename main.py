@@ -1,104 +1,35 @@
 import discord
-from discord.ext import commands, tasks
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
-import asyncio
+from discord.ext import commands
 
 intents = discord.Intents.default()
-intents.messages = True
-intents.message_content = True
+intents.message_content = True  # Necesario para leer mensajes
 
-bot = commands.Bot(command_prefix='!', intents=intents)
+bot = commands.Bot(command_prefix="!", intents=intents)
 
-users = {}
-LEVEL_UP_XP = 100
-
-def get_user_data(user_id):
-    if user_id not in users:
-        users[user_id] = {
-            "xp": 0,
-            "xp_total": 0,
-            "level": 1,
-            "coins": 0,
-            "logros": [],
-            "planeta": "🌍"
-        }
-    return users[user_id]
-
-def actualizar_planeta(user):
-    xp_total = user["xp_total"]
-
-    if xp_total < 60:
-        user["planeta"] = "🌋"  # En peligro
-        user["coins"] = max(0, user["coins"] - 5)
-    elif xp_total < 120:
-        user["planeta"] = "🌎"  # Contaminado
-    elif xp_total < 200:
-        user["planeta"] = "🌍"  # En equilibrio
-    else:
-        user["planeta"] = "🪐"  # Saludable
-        user["coins"] += 5
-
-    print(f"[DEBUG] XP total: {xp_total} → Planeta: {user['planeta']}")
-
+# Evento al iniciar el bot
 @bot.event
 async def on_ready():
-    print(f'✅ Bot conectado como {bot.user}')
-    eco_check.start()
+    print(f"Bot conectado como {bot.user}")
 
-@bot.command(name='hacer')
-async def hacer_habito(ctx, *, habito: str):
-    user = get_user_data(ctx.author.id)
+# Comando base para registrar una acción ecológica
+@bot.command()
+async def accion(ctx, *, descripcion):
+    await ctx.send(f"✅ Acción registrada: **{descripcion}**.\n¡Gracias por cuidar el planeta !")
+    # Aquí puedes añadir XP, monedas, logros, etc.
 
-    xp_ganado = 20
-    monedas = 10
-
-    user["xp"] += xp_ganado
-    user["xp_total"] += xp_ganado
-    user["coins"] += monedas
-
-    if user["xp"] >= LEVEL_UP_XP:
-        user["xp"] -= LEVEL_UP_XP
-        user["level"] += 1
-        await ctx.send(f"🎉 ¡{ctx.author.name} ha subido a nivel {user['level']}!")
-
-    actualizar_planeta(user)
-
-    await ctx.send(
-        f"✅ Acción registrada: {habito}\n+{xp_ganado} XP | +{monedas} monedas\n🌐 Estado del planeta: {user['planeta']}"
-    )
-
-@bot.command(name='perfil')
+# Comando para ver el estado básico del usuario (placeholder)
+@bot.command()
 async def perfil(ctx):
-    user = get_user_data(ctx.author.id)
+    await ctx.send(f"🎮 Perfil de {ctx.author.display_name}:\nNivel: 1 | XP: 0 | Monedas: 0")
+    # Sustituye por datos reales cuando los implementes
 
-    estado = {
-        "🌋": "🌋 En peligro: ¡haz más acciones ecológicas!",
-        "🌎": "🌎 Contaminado: tu planeta necesita ayuda.",
-        "🌍": "🌍 En equilibrio: sigue así.",
-        "🪐": "🪐 Saludable: ¡felicidades, estás salvando el planeta!"
-    }
+# Comando para ver el estado del planeta virtual
+@bot.command()
+async def planeta(ctx):
+    await ctx.send(" Planeta Virtual: Salud 100%, Contaminación 0%")
+    # Sustituye por variables reales cuando las tengas
 
-    embed = discord.Embed(title=f"Perfil de {ctx.author.name}", color=0x34eb8c)
-    embed.add_field(name="Nivel", value=user["level"])
-    embed.add_field(name="XP", value=f'{user["xp"]}/{LEVEL_UP_XP}')
-    embed.add_field(name="XP Total", value=user["xp_total"])
-    embed.add_field(name="Monedas", value=user["coins"])
-    embed.add_field(name="Logros", value=', '.join(user["logros"]) or "Ninguno")
-    embed.add_field(name="Planeta", value=estado.get(user["planeta"], "🌍 Desconocido"), inline=False)
+# Inicia el bot con tu token
+bot.run("MTI4OTYyODI2ODM1MzI5NDMzNg.Gor6_N.AfE5mU8R8qpJQXfriM4fz-U_iS7aA6anPXfLeY")
 
-    await ctx.send(embed=embed)
-
-@bot.command(name='logro')
-async def agregar_logro(ctx, *, logro: str):
-    user = get_user_data(ctx.author.id)
-    if logro not in user["logros"]:
-        user["logros"].append(logro)
-        await ctx.send(f"🏅 Logro agregado: {logro}")
-    else:
-        await ctx.send("⚠️ Ya tienes este logro.")
-
-@tasks.loop(hours=24)
-async def eco_check():
-    print("🔁 Revisión ambiental diaria...")
-
-bot.run('')  # reemplaza esto con tu token real
+#Ves esto??
